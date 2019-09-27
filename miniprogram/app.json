@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/mymvoie/mymvoie",
+    "pages/movieDetail/movieDetail",
+    "pages/map/map",
+    "pages/home/home",
+    "pages/comment/comment",
+    "pages/profile/profile"
+
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "电影中心",
+    "navigationBarTextStyle": "black"
+  },
+  
+  "tabBar": {
+    "color": "#d1d1d1",
+    "selectedColor": "#333",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "电影",
+        "iconPath": "images/dy2.png",
+        "selectedIconPath": "images/dy1.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图",
+        "iconPath": "images/map.png",
+        "selectedIconPath": "images/map_1.png"
+      },
+      {
+        "pagePath": "pages/mymvoie/mymvoie",
+        "text": "喜欢",
+        "iconPath": "images/04.png",
+        "selectedIconPath": "images/04_active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人中心",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index_1.png"
+      }
+    ]
+  },
+  
+  "sitemapLocation": "sitemap.json"
+}

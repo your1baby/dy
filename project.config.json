@@ -1,0 +1,84 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"appid": "wx72e12fec7c00669d",
+	"projectname": "xz",
+	"libVersion": "2.8.1",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 4,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/home/home",
+					"pathName": "pages/home/home",
+					"query": "id=25779217",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/comment/comment",
+					"pathName": "pages/comment/comment",
+					"query": "id=25779217",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "pages/mymovie/mymovie",
+					"pathName": "pages/mymovie/mymovie",
+					"query": "id=25779217",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/movieDetail/movieDetail",
+					"pathName": "pages/movieDetail/movieDetail",
+					"query": "id=25779217",
+					"scene": null
+				}
+			]
+		}
+	}
+}
