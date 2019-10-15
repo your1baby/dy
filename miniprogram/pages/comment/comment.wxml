@@ -27,7 +27,6 @@
 </view>
   <!-- 电影评论 -->
   <view class="desc">电影描述:　{{detail.summary}}</view>
-
     <!-- 打分 输入 -->
   <van-rate value="{{ value }}" bind:change="onChange" />
   <!-- <van-button type="info">上传</van-button> -->
