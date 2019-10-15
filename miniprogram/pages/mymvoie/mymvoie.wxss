@@ -1,0 +1,6 @@
+/* pages/mymvoie/mymvoie.wxss */
+.imagelist image{
+  width:200rpx;
+  height:200rpx;
+  margin-right:20rpx;
+}

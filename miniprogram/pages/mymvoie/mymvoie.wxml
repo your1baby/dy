@@ -1,0 +1,36 @@
+<!--pages/mymvoie/mymvoie.wxml-->
+<!-- 1.电影标题 -->
+<view>电影标题：
+   <van-field
+      value="{{ movienname }}"
+      placeholder="请输入影片名称..."
+      bind:change="onChangeMname"
+      type="textarea"
+
+    />
+<!-- 2.喜欢原因[...] -->
+  <text>写一点你喜欢的原因:</text>
+  <van-cell-group>
+      <van-field
+        value="{{ content }}"
+        placeholder="请留言..."
+        bind:change="onChangeContent"
+        type="textarea"
+        autosize
+
+      />
+    </van-cell-group>
+    <!-- 3.上传电影精彩画面 -->
+    <van-button type="warning" size="large" bindtap="upload">上传喜欢图片</van-button>
+
+    <!-- 4.图片预览区域 -->
+    <view class="imagelist">
+      <!-- 图片列表 -->
+      <image class="comment-img"  wx:for="{{images}}" wx:key="{{index}}"
+       src="{{item}}"></image>
+    </view>
+</view>
+<!-- 5.提交按钮 -->
+<van-button style="margin-top:30rpx;" type="info" size="large" bindtap="submit">提交</van-button>
+<!-- 6.显示电影喜欢列表 -->
+<van-button style="margin-top:30rpx;" type="primary" size="large" bindtap="jumpDetail">查看我的喜欢...</van-button>

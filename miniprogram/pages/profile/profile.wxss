@@ -1,0 +1,28 @@
+/* pages/profile/profile.wxss */
+/* 1.父元素 */
+.profile{
+  position: relative;
+  height:400rpx;
+  width:100%;
+  text-align: center;
+  background: #e54847;
+}
+/* 2.头像子元素 */
+.profile-img{
+  width:200rpx;
+  height:200rpx;
+  display: block;
+  overflow: hidden;
+  border-radius: 50% ;
+  position: absolute;
+  top:20rpx;
+  left:50%;
+  transform: translate(-50%,60rpx);
+}
+/* 3.name */
+.profile-name{
+  position: absolute;
+  top:80%;
+  left: 50%;
+  transform: translate(-50%,10rpx);
+}

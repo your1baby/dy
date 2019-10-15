@@ -1,0 +1,54 @@
+ <!-- pages/home/home.wxml -->
+<!--
+<text>pages/home/home.wxml</text>
+<van-button style="margin-bottom:5px;" type="default">默认按钮</van-button>
+<van-button style="margin-bottom:5px;" type="primary">主要按钮</van-button>
+<van-button style="margin-bottom:5px;" type="info">信息按钮</van-button>
+<van-button style="margin-bottom:5px;" type="warning">警告按钮</van-button>
+<van-button style="margin-bottom:5px;" type="danger">危险按钮</van-button>
+
+<van-button plain type="primary">朴素按钮</van-button>
+<van-button plain type="danger">朴素按钮</van-button>
+
+<van-button plain hairline type="primary">细边框按钮</van-button>
+<van-button plain hairline type="danger">细边框按钮</van-button>
+
+<van-button loading type="primary" />
+<van-button loading type="danger" loading-text="加载中..." />
+
+<van-button icon="star-o" type="primary" />
+<van-button icon="star-o" type="primary">星星按钮</van-button>
+<van-button icon="https://img.yzcdn.cn/vant/logo.png" type="danger">按钮</van-button>
+
+<van-button square type="primary">方形按钮</van-button>
+<van-button round type="danger">圆形按钮</van-button>
+
+<van-button type="primary" size="large">大号按钮</van-button>
+<van-button type="primary" size="normal">普通按钮</van-button>
+<van-button type="primary" size="small">小型按钮</van-button>
+<van-button type="primary" size="mini">迷你按钮</van-button>
+
+<van-button color="pink">自定义颜色</van-button>
+<van-button color="#7232dd" plain>自定义颜色</van-button>
+
+ -->
+<!-- 一部电影的区域 -->
+ <view class="movie" wx:for="{{list}}" wx:key="index">
+ <!-- 左侧电影图片 -->
+   <image class="movie-img" src="{{item.images.small}}"></image>
+   <!--右侧电影介绍-  -->
+   <view class="movie-info">
+      <!-- 标题 -->
+      <view class="movie-title">{{item.title}}</view>
+      <!-- 评论 -->
+      <view class="movie-score">评分:{{item.rating.average}}</view>
+      <!-- 主演 -->
+      <view>主演: {{item.casts[0].name}} </view>
+      <!-- 上映时间 -->
+      <view>年份:{{item.year}}</view>
+      <!-- 按钮 详情 -->
+      <button  class="movie-comment" bindtap="jumpComment" data-id="{{item.id}}">详情</button>
+      <!-- <van-button style="margin-bottom:5px;" type="info">查看详情</van-button> -->
+   </view>
+ </view>
+<button>查看更多> </button>
